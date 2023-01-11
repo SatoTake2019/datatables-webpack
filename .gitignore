@@ -1,4 +1,10 @@
-myapps/static/js/__datatables__/node_modules/
+# Django stuff:
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# JavaScript
+**/**/node_modules/
 # JetBrains IDE
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -70,15 +76,7 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
-# Flask stuff:
-instance/
-.webassets-cache
 
 # Scrapy stuff:
 .scrapy
