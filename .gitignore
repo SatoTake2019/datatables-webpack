@@ -1,3 +1,4 @@
+myapps/static/js/__datatables__/node_modules/
 # JetBrains IDE
 .idea/**/workspace.xml
 .idea/**/tasks.xml
