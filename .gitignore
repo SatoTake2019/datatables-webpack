@@ -1,5 +1,8 @@
+# JetBrains IDE
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+
 # Environments
-.idea/
 .env
 .venv
 
