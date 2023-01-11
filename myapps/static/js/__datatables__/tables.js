@@ -1,4 +1,3 @@
-
 import "datatables.net-bs5";
 import $ from "jquery";
 import "./base.js";

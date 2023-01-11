@@ -1,0 +1,18 @@
+{
+  "status": "done",
+  "assets": {
+    "tables.bundle.js": {
+      "name": "tables.bundle.js",
+      "path": "D:\\PyCharmProjects\\datatables-webpack\\myapps\\static\\js\\tables.bundle.js"
+    },
+    "tables.bundle.js.map": {
+      "name": "tables.bundle.js.map",
+      "path": "D:\\PyCharmProjects\\datatables-webpack\\myapps\\static\\js\\tables.bundle.js.map"
+    }
+  },
+  "chunks": {
+    "tables": [
+      "tables.bundle.js"
+    ]
+  }
+}

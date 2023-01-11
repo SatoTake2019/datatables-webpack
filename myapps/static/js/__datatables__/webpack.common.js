@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var BundleTracker = require('webpack-bundle-tracker');
 
-module.exports = {
+module.exports = (outputFile, htmlMinifyOption) => ({
     target: 'web',      // for ES5
     context: __dirname,
     entry: {
@@ -70,7 +70,7 @@ module.exports = {
                 ],
             },
             {
-                test: /datatables\.net.*/,
+                test: /datatables\.net*.js$/,
                 use: 'imports-loader?define=>false'
             }
         ],
@@ -94,4 +94,4 @@ module.exports = {
             'csrftoken': ''
         })
     ]
-}
+});
