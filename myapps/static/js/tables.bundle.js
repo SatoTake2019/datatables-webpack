@@ -1,6 +1,26 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./initTable.js":
+/*!**********************!*\
+  !*** ./initTable.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ initTable)
+/* harmony export */ });
+/* harmony import */ var datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! datatables.net-bs5 */ "./node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs");
+
+function initTable() {
+  var table = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"]('#example');
+  return table;
+}
+
+/***/ }),
+
 /***/ "./node_modules/jquery/external/sizzle/dist/sizzle.js":
 /*!************************************************************!*\
   !*** ./node_modules/jquery/external/sizzle/dist/sizzle.js ***!
@@ -28919,19 +28939,10 @@ var __webpack_exports__ = {};
   !*** ./tables.js ***!
   \*******************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "initTable": () => (/* binding */ initTable)
-/* harmony export */ });
-/* harmony import */ var datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! datatables.net-bs5 */ "./node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs");
-// import initTable from "./initTable.js";
+/* harmony import */ var _initTable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initTable.js */ "./initTable.js");
 
-"datatables.net-bs5";
-function initTable() {
-  var table = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"]('#example');
-  return table;
-}
 document.addEventListener('DOMContentLoaded', function () {
-  var table = initTable();
+  var table = (0,_initTable_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 })();
 
