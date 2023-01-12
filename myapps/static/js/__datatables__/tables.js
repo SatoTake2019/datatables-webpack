@@ -1,10 +1,12 @@
-import "datatables.net-bs5";
-import $ from "jquery";
-import "./base.js";
-import bootstrap from 'bootstrap';
+// import initTable from "./initTable.js";
+import DataTable from "datatables.net-bs5"; "datatables.net-bs5";
 
-
-export default function initTable() {
-    let table = $('#example').DataTable();
+export function initTable() {
+    let table = new DataTable('#example');
     return table;
+    
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    let table = initTable();
+});

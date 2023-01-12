@@ -1,4 +1,4 @@
-import initTable from "../tables";
+import { initTable } from "../tables";
 
 describe("test Datatable initialization", () => {
     test("init test", () => {
