@@ -7,8 +7,10 @@ JavaScript source code is in "myapps\static\js_datatables_\tables.js". This code
 ## "ok-split-into-two-files" branch
 This branch is just splitting the above branch's JavaScript source code from 1 to 2 files. As above, jest test, webpack build, and execution on the browser were successful.
 
-
-
+## "jest-err-with-one-option" branch
+In this branch, follow the example in [Non-jQuery Options](https://datatables.net/manual/options#Non-jQuery-options) 
+and add one option "{ paging: false }" to the code in the successful branch above. 
+Just adding this option gave an error in jest's test.
 
 ## License
 
