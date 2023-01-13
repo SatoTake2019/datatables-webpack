@@ -12,6 +12,8 @@ In this branch, follow the example in [Non-jQuery Options](https://datatables.ne
 and add one option "{ paging: false }" to the code in the successful branch above. 
 Just adding this option gave an error in jest's test.
 
-## License
 
+
+
+## License
 DataTables is under the MIT License. and its official site is https://datatables.net/. This repository claims no license. The work in this repository also draws on many discussions on https://datatables.net/forums/.

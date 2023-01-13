@@ -15,7 +15,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! datatables.net-bs5 */ "./node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs");
 
 function initTable() {
-  var table = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"]('#example');
+  // let table = new DataTable('#example', { paging: false });
+  //let table = new DataTable('#example').Api( { paging: false } );
+  var DataTableFunc = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"](null, null);
+  var table = DataTableFunc.Api('#example', {
+    paging: false
+  });
+  // Object.setPrototypeOf({selector, options}, DataTableFunc);
+  // let table = new DataTableFunc('#example', { paging: false });
   return table;
 }
 
