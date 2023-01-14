@@ -15,14 +15,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! datatables.net-bs5 */ "./node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs");
 
 function initTable() {
-  // let table = new DataTable('#example', { paging: false });
-  //let table = new DataTable('#example').Api( { paging: false } );
-  var DataTableFunc = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"](null, null);
-  var table = DataTableFunc.Api('#example', {
+  var table;
+  var options = {
     paging: false
-  });
-  // Object.setPrototypeOf({selector, options}, DataTableFunc);
-  // let table = new DataTableFunc('#example', { paging: false });
+  };
+  if (globalThis.hasOwnProperty('test')) {
+    /*
+        This initialization expression passes Jest unit tests,
+        but webpack-built bundle file gives an error in the browser.
+     */
+    var DataTableFunc = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"](null, null);
+    table = DataTableFunc.Api('#example', options);
+  } else {
+    /* 
+        This initialization expression will fail in Jest test, 
+        but webpack-built bundle file goes well on browser.
+     */
+    table = new datatables_net_bs5__WEBPACK_IMPORTED_MODULE_0__["default"]('#example', options);
+  }
   return table;
 }
 
